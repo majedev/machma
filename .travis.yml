@@ -7,5 +7,8 @@ go:
 os:
   - linux
 
+script:
+  - go test -race ./...
+
 after_success:
   curl -sL https://git.io/goreleaser | bash
